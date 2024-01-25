@@ -15,7 +15,6 @@
 			id="main-content"
 			class="min-w-main-content max-w-main-content flex-1 p-3"
 		>
-			<h1>HELLO WORLD</h1>
 			<RouterView />
 		</div>
 	</div>
