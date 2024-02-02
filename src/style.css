@@ -3,37 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  color: #fff;
-  background-color: #101012;
-
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after,
-*:hover,
-*:active,
-*:focus,
-*:visited,
-*:link,
-*::selection,
-*::placeholder {
   box-sizing: border-box;
-}
 
-html, body, #app {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  --header-height: 60px;
 }

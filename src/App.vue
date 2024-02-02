@@ -3,7 +3,7 @@
 <template>
 	<div
 		id="header-wrapper"
-		class="fixed left-0 top-0 flex h-header w-full justify-center"
+		class="h-header bg-neutral-dark-200 fixed left-0 top-0 flex w-full justify-center"
 	>
 		<div id="header" class="flex flex-1 p-3"></div>
 	</div>

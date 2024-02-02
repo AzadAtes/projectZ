@@ -10,7 +10,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<li id="task">
+	<li id="task" class="bg-neutral-dark-300">
 		<p>{{ props.task.name }}</p>
 	</li>
 </template>
