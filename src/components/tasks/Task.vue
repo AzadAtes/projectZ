@@ -17,7 +17,7 @@ const showDetails = ref(false);
 <template>
 	<li
 		data-name="task-item"
-		class="mb-4 ml-12 mr-4 flex flex-1 flex-col rounded-xl bg-neutral-dark-500 shadow"
+		class="mb-4 ml-12 mr-0 flex flex-1 flex-col rounded-xl bg-neutral-dark-500 shadow"
 		:class="isEvenIteration ? 'bg-neutral-dark-600' : 'bg-neutral-dark-500'"
 	>
 		<p
@@ -36,4 +36,37 @@ const showDetails = ref(false);
 	</li>
 </template>
 
-<style scoped></style>
+<style scoped>
+li {
+	z-index: 1;
+	position: relative;
+}
+p::before {
+	top: 30px;
+	left: -24px;
+	position: absolute;
+	content: " ";
+	border-left: solid 2px #292831;
+	border-bottom: solid 2px #292831;
+	border-bottom-left-radius: 4px;
+	min-width: 24px;
+}
+li::before {
+	z-index: 0;
+	top: 45px;
+	height: calc(100% - (56px + 30px));
+	left: 24px;
+	position: absolute;
+	content: " ";
+	border-left: solid 2px #292831;
+	border-bottom-left-radius: 4px;
+}
+ul li:last-child::after {
+	top: 30px;
+	height: calc(100% - 55px);
+	left: -24px;
+	position: absolute;
+	content: " ";
+	border-left: solid 2px #1c1b20;
+}
+</style>
