@@ -1,15 +1,24 @@
 <script setup lang="ts">
 import Task from "./Task.vue";
-import { useTaskStore } from "../../stores/taskStore.ts";
-const taskStore = useTaskStore();
+import { PropType } from "vue";
+
+const props = defineProps({
+	tasks: {
+		type: Object as PropType<Task[]>,
+		required: false,
+	},
+	isEvenIteration: Boolean, // used to control alternating effects like background-color.
+});
 </script>
 
 <template>
-	<ul
-		id="task-list"
-		class="bg-neutral-dark-200 flex list-none flex-col gap-3 p-3"
-	>
-		<Task v-for="task in taskStore.tasks" :task="task" :key="task.id" />
+	<ul data-name="task-list" class="ml-6 flex flex-1 list-none flex-col gap-5">
+		<Task
+			v-for="task in props.tasks"
+			:task="task"
+			:isEvenIteration="props.isEvenIteration"
+			:key="task.id"
+		/>
 	</ul>
 </template>
 

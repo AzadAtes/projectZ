@@ -4,10 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				"neutral-dark-100": "#100f12",
-				"neutral-dark-200": "#161519",
-				"neutral-dark-300": "#1c1b20",
 				"neutral-dark-400": "#292831",
+				"neutral-dark-500": "#1c1b20",
+				"neutral-dark-600": "#161519",
+				"neutral-dark-700": "#100f12",
 			},
 			minWidth: {
 				"main-content": "300px",

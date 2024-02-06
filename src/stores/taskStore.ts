@@ -12,7 +12,7 @@ export const useTaskStore = defineStore("tasks", () => {
 				{
 					id: "110",
 					name: "Pushups",
-					subSubTasks: [
+					subTasks: [
 						{
 							id: "111",
 							name: "Set 1. 10x",
@@ -26,7 +26,7 @@ export const useTaskStore = defineStore("tasks", () => {
 				{
 					id: "120",
 					name: "Dips",
-					subSubTasks: [
+					subTasks: [
 						{
 							id: "121",
 							name: "Set 1. 12x",
