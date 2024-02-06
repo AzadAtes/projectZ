@@ -20,6 +20,52 @@ export const useTaskStore = defineStore("tasks", () => {
 						{
 							id: "112",
 							name: "Set 1. 10x",
+							subTasks: [
+								{
+									id: "1111",
+									name: "Set 1. 10x",
+									subTasks: [
+										{
+											id: "111",
+											name: "Set 1. 10x",
+										},
+										{
+											id: "112",
+											name: "Set 1. 10x",
+											subTasks: [
+												{
+													id: "1111",
+													name: "Set 1. 10x",
+												},
+												{
+													id: "1112",
+													name: "Set 1. 10x",
+												},
+											],
+										},
+										{
+											id: "113",
+											name: "Set 1. 10x",
+										},
+										{
+											id: "114",
+											name: "Set 1. 10x",
+										},
+									],
+								},
+								{
+									id: "1112",
+									name: "Set 1. 10x",
+								},
+							],
+						},
+						{
+							id: "113",
+							name: "Set 1. 10x",
+						},
+						{
+							id: "114",
+							name: "Set 1. 10x",
 						},
 					],
 				},
@@ -31,6 +77,14 @@ export const useTaskStore = defineStore("tasks", () => {
 							id: "121",
 							name: "Set 1. 12x",
 						},
+						{
+							id: "122",
+							name: "Set 1. 12x",
+						},
+						{
+							id: "123",
+							name: "Set 1. 12x",
+						},
 					],
 				},
 			],
@@ -38,8 +92,7 @@ export const useTaskStore = defineStore("tasks", () => {
 		{
 			id: "2",
 			name: "This is my very second Task.",
-			description:
-				"This is a very long and precise description of the task at hand.",
+			description: "This is a very long and precise description of the task at hand.",
 			dueDateAndTime: "Tomorrow 15:45",
 			subTasks: [
 				{

@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<ul data-name="task-list" class="ml-6 flex flex-1 list-none flex-col gap-5">
+	<ul data-name="task-list" class="flex flex-1 list-none flex-col">
 		<Task
 			v-for="task in props.tasks"
 			:task="task"
